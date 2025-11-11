@@ -34,6 +34,12 @@ def update_owner(current_user):
   if phone:
     current_user.phone = phone
 
+
+  session.commit()
+  print("===== Updated Info ========")
+  current_user.display()
+  return current_user
+
   
 
 #Update profile function

@@ -42,7 +42,7 @@ def login():
 
     user = session.query(Owners).where(Owners.email == email).first()
     
-    if user and user.password == password
+    if user and user.password == password:
         print("Success!")
         print(f"Welcome back, {user.id}!")
         return user
